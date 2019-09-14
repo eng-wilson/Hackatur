@@ -12,25 +12,32 @@ import { connect } from "react-redux";
 // import YourActions from '../Redux/YourRedux'
 
 // Styles
-import styles from "./Styles/HomeScreenStyle";
+import {
+  Container,
+  Header,
+  Avatar,
+  Name,
+  Bio,
+  Stars,
+  Starred,
+  OwnerAvatar,
+  Info,
+  Title,
+  Author
+} from "./Styles/HomeScreenStyle";
 import Images from "../Themes/Images";
 
 class HomeScreen extends Component {
   render() {
     return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.backgroundAvatar}>
-          <View style={styles.containerAvatar}>
-            <Image
-              source={Images.userTest}
-              style={styles.avatar}
-              resizeMode={"contain"}
-            />
-          </View>
-        </View>
-        <ScrollView style={styles.backgroundContent}>
-          <Text>Teste</Text>
-        </ScrollView>
+      <SafeAreaView style={{ flex: 1 }}>
+        <Container>
+          <Header>
+            <Avatar source={Images.userTest} />
+            <Name>Wilson</Name>
+            <Bio>Viajante</Bio>
+          </Header>
+        </Container>
       </SafeAreaView>
     );
   }
