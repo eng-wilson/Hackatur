@@ -14,6 +14,7 @@ import * as Animatable from "react-native-animatable";
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 import Images from "../Themes/Images";
+import StatementListItem from "../Components/StatementItem";
 // Styles
 import styles from "./Styles/MapSearchScreenStyle";
 
@@ -31,11 +32,23 @@ class MapSearchScreen extends Component {
 
           <Text style={styles.sessionTitle}>Perto de você</Text>
           <ScrollView>
-            <Animatable.View animation="fadeInUpBig" delay={1400}>
+            <Animatable.View animation="fadeInUpBig" delay={70}>
               <View style={styles.near}>
-                <StatementList
-                  data={_.get(this.props, "lastStatementEntries")}
-                  onPressLast={() => navigation.navigate("StatementScreen")}
+                <StatementListItem
+                  uri={Images.laCantini}
+                  title={"La Cantina di Giovanni"}
+                />
+                <StatementListItem
+                  uri={Images.acaiAju}
+                  title={"Açaí Aju 24h"}
+                />
+                <StatementListItem
+                  uri={Images.carraraFp}
+                  title={"Carrara Food Park"}
+                />
+                <StatementListItem
+                  uri={Images.barDeTapas}
+                  title={"Bar de Tapas"}
                 />
               </View>
             </Animatable.View>

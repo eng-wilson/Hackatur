@@ -18,6 +18,7 @@ export default StyleSheet.create({
     fontSize: 34
   },
   near: {
+    flex: 1,
     paddingBottom: 15
   }
 });

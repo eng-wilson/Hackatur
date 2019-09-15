@@ -24,8 +24,12 @@ const images = {
   mapPin: require("../Images/Icons/map-pin.png"),
   profileIcon: require("../Images/default-avatar.png"),
   userTest: require("../Images/user.png"),
-  maps1: require("../Images/maps1.png"),
-  orangeBackground: require("../Images/orange-background.png")
+  maps1: require("../Images/Icons/maps1.png"),
+  orangeBackground: require("../Images/orange-background.png"),
+  laCantini: require("../Images/la-cantini.png"),
+  acaiAju: require("../Images/acai-aju.png"),
+  carraraFp: require("../Images/carrara-fp.png"),
+  barDeTapas: require("../Images/bar-de-tapas.png")
 };
 
 export default images;
