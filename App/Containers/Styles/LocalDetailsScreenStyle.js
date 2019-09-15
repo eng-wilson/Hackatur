@@ -33,8 +33,8 @@ export default StyleSheet.create({
     flexDirection: "row"
   },
   buttonStyle: {
-    height: 30,
-    width: 175,
+    height: 45,
+    width: 215,
     borderRadius: 10,
     backgroundColor: "#ff6600",
     justifyContent: "center",
@@ -59,5 +59,8 @@ export default StyleSheet.create({
   },
   casual: {
     backgroundColor: "#2196f3"
+  },
+  description: {
+    fontSize: 18
   }
 });

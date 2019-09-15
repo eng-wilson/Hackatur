@@ -9,6 +9,7 @@ import HomeScreen from "../Containers/HomeScreen";
 import MapSearchScreen from "../Containers/MapSearchScreen";
 import LaunchScreen from "../Containers/LaunchScreen";
 import LocalDetailsScreen from "../Containers/LocalDetailsScreen";
+import FinalBookingScreen from "../Containers/FinalBookingScreen";
 
 import Images from "../Themes/Images";
 
@@ -16,7 +17,8 @@ import styles from "./Styles/NavigationStyles";
 
 const BookingNav = createStackNavigator({
   MapSearchScreen: { screen: MapSearchScreen },
-  LocalDetailsScreen: { screen: LocalDetailsScreen }
+  LocalDetailsScreen: { screen: LocalDetailsScreen },
+  FinalBookingScreen: { screen: FinalBookingScreen }
 });
 
 const TabNav = createBottomTabNavigator(

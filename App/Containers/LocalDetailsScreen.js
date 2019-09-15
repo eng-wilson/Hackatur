@@ -26,8 +26,8 @@ class LocalDetailsScreen extends Component {
           <Image style={styles.ratingContainer} source={Images.starRating} />
         </View>
         <View style={styles.divisor} />
-        <ScrollView style={{ marginLeft: 20, marginRight: 20 }}>
-          <Text>
+        <ScrollView style={{ marginLeft: 20, marginRight: 20, marginTop: 15 }}>
+          <Text style={styles.description}>
             Restaurante italiano com diversas massas e destaque aos molhos de
             frutos do mar, bebidas e clima familiar.
           </Text>
@@ -53,6 +53,7 @@ class LocalDetailsScreen extends Component {
         <TouchableOpacity
           hitSlop={{ top: 10, bottom: 10, left: 0, right: 0 }}
           style={{ alignItems: "center" }}
+          onPress={() => this.props.navigation.navigate("FinalBookingScreen")}
         >
           <ElevatedView elevation={12} style={styles.buttonStyle}>
             <Text style={styles.buttonTitle}>Efetuar reserva</Text>
