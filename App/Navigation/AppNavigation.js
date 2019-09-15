@@ -14,6 +14,11 @@ import Images from "../Themes/Images";
 
 import styles from "./Styles/NavigationStyles";
 
+const BookingNav = createStackNavigator({
+  MapSearchScreen: { screen: MapSearchScreen },
+  LocalDetailsScreen: { screen: LocalDetailsScreen }
+});
+
 const TabNav = createBottomTabNavigator(
   {
     Perfil: {
@@ -31,7 +36,7 @@ const TabNav = createBottomTabNavigator(
       }
     },
     Explorar: {
-      screen: MapSearchScreen,
+      screen: BookingNav,
       navigationOptions: {
         tabBarIcon: () => <Image source={Images.mapPin} />
       }
