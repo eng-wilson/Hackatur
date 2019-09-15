@@ -20,8 +20,11 @@ const images = {
   hamburger: require("../Images/Icons/hamburger.png"),
   backButton: require("../Images/Icons/back-button.png"),
   closeButton: require("../Images/Icons/close-button.png"),
+  tabProfile: require("../Images/Icons/tab-profile-icon.png"),
+  mapPin: require("../Images/Icons/map-pin.png"),
   profileIcon: require("../Images/default-avatar.png"),
   userTest: require("../Images/user.png"),
+  maps1: require("../Images/maps1.png"),
   orangeBackground: require("../Images/orange-background.png")
 };
 
