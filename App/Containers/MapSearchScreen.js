@@ -43,6 +43,7 @@ class MapSearchScreen extends Component {
                 <StatementListItem
                   uri={Images.laCantini}
                   title={"La Cantina di Giovanni"}
+                  percent={77}
                   onPress={() =>
                     this.props.navigation.navigate("LocalDetailsScreen")
                   }
@@ -50,14 +51,17 @@ class MapSearchScreen extends Component {
                 <StatementListItem
                   uri={Images.acaiAju}
                   title={"Açaí Aju 24h"}
+                  percent={70}
                 />
                 <StatementListItem
                   uri={Images.carraraFp}
                   title={"Carrara Food Park"}
+                  percent={56}
                 />
                 <StatementListItem
                   uri={Images.barDeTapas}
                   title={"Bar de Tapas"}
+                  percent={37}
                 />
               </View>
             </Animatable.View>

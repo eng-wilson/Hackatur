@@ -16,10 +16,13 @@ export default StyleSheet.create({
     flex: 1,
     width: Dimensions.get("window").width * 0.8,
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexBasis: 0
   },
-  rightContainer: {
-    flexShrink: 1
+  middleContainer: {
+    flexShrink: 1,
+    width: 150
   },
   ratingContainer: {
     width: 125,
@@ -36,5 +39,10 @@ export default StyleSheet.create({
     height: 100,
     margin: 10,
     borderRadius: 10
+  },
+  percentNumber: {
+    fontWeight: "bold",
+    fontSize: 20,
+    marginRight: 10
   }
 });
