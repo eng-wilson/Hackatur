@@ -21,6 +21,10 @@ export default StyleSheet.create({
   rightContainer: {
     flexShrink: 1
   },
+  ratingContainer: {
+    width: 125,
+    height: 25
+  },
   title: {
     color: "#333",
     fontSize: 18,

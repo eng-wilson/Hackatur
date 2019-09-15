@@ -29,7 +29,8 @@ const images = {
   laCantini: require("../Images/la-cantini.png"),
   acaiAju: require("../Images/acai-aju.png"),
   carraraFp: require("../Images/carrara-fp.png"),
-  barDeTapas: require("../Images/bar-de-tapas.png")
+  barDeTapas: require("../Images/bar-de-tapas.png"),
+  starRating: require("../Images/star-rating.png")
 };
 
 export default images;

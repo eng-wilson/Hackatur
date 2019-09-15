@@ -18,6 +18,10 @@ export default class Components extends Component {
             </View>
             <View style={styles.rightContainer}>
               <Text style={styles.title}>{this.props.title}</Text>
+              <Image
+                style={styles.ratingContainer}
+                source={Images.starRating}
+              />
             </View>
           </View>
         </TouchableOpacity>
