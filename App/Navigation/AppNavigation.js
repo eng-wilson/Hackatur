@@ -10,6 +10,7 @@ import MapSearchScreen from "../Containers/MapSearchScreen";
 import LaunchScreen from "../Containers/LaunchScreen";
 import LocalDetailsScreen from "../Containers/LocalDetailsScreen";
 import FinalBookingScreen from "../Containers/FinalBookingScreen";
+import SuggestionScreen from "../Containers/SuggestionScreen";
 
 import Images from "../Themes/Images";
 
@@ -33,7 +34,7 @@ const BookingNav = createStackNavigator(
 const TabNav = createBottomTabNavigator(
   {
     Home: {
-      screen: HomeScreen,
+      screen: SuggestionScreen,
       navigationOptions: {
         tabBarIcon: () => (
           <Image

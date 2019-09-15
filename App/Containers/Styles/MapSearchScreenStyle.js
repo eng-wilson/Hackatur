@@ -15,10 +15,28 @@ export default StyleSheet.create({
     alignItems: "center"
   },
   sessionTitle: {
-    fontSize: 34
+    width: Dimensions.get("window").width,
+    fontSize: 30,
+    backgroundColor: "#ff6600",
+    color: "#fff",
+    textAlign: "center"
   },
   near: {
     flex: 1,
     paddingBottom: 15
+  },
+  divisor: {
+    flexDirection: "row",
+    height: 1,
+    backgroundColor: "#e9ebef"
+  },
+  input: {
+    width: Dimensions.get("window").width - 20,
+    height: 48,
+    backgroundColor: "rgba( 0, 0, 0, 0.3 )",
+    borderRadius: 28,
+    paddingHorizontal: 25,
+    color: "#fff",
+    justifyContent: "center"
   }
 });

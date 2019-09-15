@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import { connect } from "react-redux";
 import { QRCode } from "react-native-custom-qr-codes";
+import { toast } from "react-toastify";
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
@@ -16,6 +17,7 @@ import styles from "./Styles/FinalBookingScreenStyle";
 
 class FinalBookingScreen extends Component {
   render() {
+    toast.error("Requisição efetuada");
     return (
       <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.container}>

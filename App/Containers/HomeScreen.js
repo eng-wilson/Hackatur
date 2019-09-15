@@ -36,6 +36,7 @@ class HomeScreen extends Component {
             <Avatar source={Images.userTest} />
             <Name>Wilson Carvalho</Name>
             <Bio>Viajante</Bio>
+            <Bio>22 anos</Bio>
           </Header>
         </Container>
       </SafeAreaView>

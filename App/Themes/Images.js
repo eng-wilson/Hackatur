@@ -31,7 +31,11 @@ const images = {
   acaiAju: require("../Images/acai-aju.png"),
   carraraFp: require("../Images/carrara-fp.png"),
   barDeTapas: require("../Images/bar-de-tapas.png"),
-  starRating: require("../Images/star-rating.png")
+  starRating: require("../Images/star-rating.png"),
+  caninde: require("../Images/entretenimento.png"),
+  caranguejo: require("../Images/caranguejo.png"),
+  hotel: require("../Images/hotel.png"),
+  cultura: require("../Images/cultura.png")
 };
 
 export default images;

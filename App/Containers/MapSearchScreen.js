@@ -10,6 +10,7 @@ import {
 import { connect } from "react-redux";
 import MapView from "react-native-maps";
 import Geolocation from "@react-native-community/geolocation";
+import SearchInput from "react-native-search-filter";
 import * as Animatable from "react-native-animatable";
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
@@ -27,10 +28,15 @@ class MapSearchScreen extends Component {
     return (
       <SafeAreaView style={styles.mapContainer}>
         <View style={styles.mapContainer}>
-          <Text>MapSearchScreen</Text>
+          <SearchInput
+            placeholder={"Buscar"}
+            style={styles.input}
+            placeholderTextColor="#fff"
+          />
           <Image source={Images.maps1} />
 
-          <Text style={styles.sessionTitle}>Perto de você</Text>
+          <Text style={styles.sessionTitle}>Nas proximidades</Text>
+          <View style={styles.divisor} />
           <ScrollView>
             <Animatable.View animation="fadeInUpBig" delay={70}>
               <View style={styles.near}>
