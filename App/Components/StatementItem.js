@@ -11,7 +11,7 @@ export default class Components extends Component {
   render() {
     return (
       <ElevatedView elevation={2} style={styles.container}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={this.props.onPress}>
           <View style={styles.content}>
             <View style={styles.leftContainer}>
               <Image style={styles.imageContainer} source={this.props.uri} />

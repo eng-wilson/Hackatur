@@ -37,6 +37,9 @@ class MapSearchScreen extends Component {
                 <StatementListItem
                   uri={Images.laCantini}
                   title={"La Cantina di Giovanni"}
+                  onPress={() =>
+                    this.props.navigation.navigate("LocalDetailsScreen")
+                  }
                 />
                 <StatementListItem
                   uri={Images.acaiAju}

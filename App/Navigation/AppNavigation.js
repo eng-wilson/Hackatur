@@ -8,6 +8,7 @@ import { Image } from "react-native";
 import HomeScreen from "../Containers/HomeScreen";
 import MapSearchScreen from "../Containers/MapSearchScreen";
 import LaunchScreen from "../Containers/LaunchScreen";
+import LocalDetailsScreen from "../Containers/LocalDetailsScreen";
 
 import Images from "../Themes/Images";
 
@@ -50,7 +51,8 @@ const TabNav = createBottomTabNavigator(
 const PrimaryNav = createStackNavigator(
   {
     HomeScreen: TabNav,
-    LaunchScreen: { screen: LaunchScreen }
+    LaunchScreen: { screen: LaunchScreen },
+    LocalDetailsScreen: { screen: LocalDetailsScreen }
   },
   {
     // Default config for all screens
