@@ -42,10 +42,47 @@ export const Stars = styled.FlatList.attrs({
 `;
 
 export const Starred = styled.View`
-  background: #f5f5f5;
+  background: #2196f3;
+  width: 67%;
   border-radius: 4px;
   padding: 10px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
+  flex-direction: row;
+  align-items: center;
+`;
+export const Starred2 = styled.View`
+  background: #f44336;
+  width: 23%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 33px;
+  flex-direction: row;
+  align-items: center;
+`;
+export const Starred3 = styled.View`
+  background: #4caf50;
+  width: 6%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 33px;
+  flex-direction: row;
+  align-items: center;
+`;
+export const Starred4 = styled.View`
+  background: #ff9800;
+  width: 3%;
+  border-radius: 4px;
+  padding: 10px 8px;
+  margin-bottom: 33px;
+  flex-direction: row;
+  align-items: center;
+`;
+export const Starred5 = styled.View`
+  background: #9c27b0;
+  width: 1%;
+  border-radius: 4px;
+  padding: 10px 3px;
+  margin-bottom: 33px;
   flex-direction: row;
   align-items: center;
 `;
