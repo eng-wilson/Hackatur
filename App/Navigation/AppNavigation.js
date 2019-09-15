@@ -15,14 +15,37 @@ import Images from "../Themes/Images";
 
 import styles from "./Styles/NavigationStyles";
 
-const BookingNav = createStackNavigator({
-  MapSearchScreen: { screen: MapSearchScreen },
-  LocalDetailsScreen: { screen: LocalDetailsScreen },
-  FinalBookingScreen: { screen: FinalBookingScreen }
-});
+const BookingNav = createStackNavigator(
+  {
+    MapSearchScreen: { screen: MapSearchScreen },
+    LocalDetailsScreen: { screen: LocalDetailsScreen },
+    FinalBookingScreen: { screen: FinalBookingScreen }
+  },
+  {
+    // Default config for all screens
+    headerMode: "none",
+    navigationOptions: {
+      headerStyle: styles.header
+    }
+  }
+);
 
 const TabNav = createBottomTabNavigator(
   {
+    Home: {
+      screen: HomeScreen,
+      navigationOptions: {
+        tabBarIcon: () => (
+          <Image
+            source={Images.homeIcon}
+            style={{
+              width: 45,
+              height: 45
+            }}
+          />
+        )
+      }
+    },
     Perfil: {
       screen: HomeScreen,
       navigationOptions: {
@@ -48,8 +71,10 @@ const TabNav = createBottomTabNavigator(
     tabBarOptions: {
       showLabel: false,
       showIcon: true,
-      tintColor: "#999",
-      activeTintColor: "#aaa"
+      activeTintColor: "#fff",
+      inactiveTintColor: "#fff",
+      inactiveBackgroundColor: "#ff6600",
+      activeBackgroundColor: "#ff5500"
     }
   }
 );

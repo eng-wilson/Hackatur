@@ -25,6 +25,7 @@ const images = {
   profileIcon: require("../Images/default-avatar.png"),
   userTest: require("../Images/user.png"),
   maps1: require("../Images/Icons/maps1.png"),
+  homeIcon: require("../Images/Icons/home-icon.png"),
   orangeBackground: require("../Images/orange-background.png"),
   laCantini: require("../Images/la-cantini.png"),
   acaiAju: require("../Images/acai-aju.png"),
